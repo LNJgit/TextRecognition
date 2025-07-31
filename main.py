@@ -7,13 +7,13 @@ from text_utils import TextDetector
 
 
 #Read image
-image_path = 'assets/test1.jpg'
+image_path = 'assets/test5.png'
 
 img = cv2.imread(image_path)
 
 #Instantiate our face detection object
 FaceDetection = FaceDetection()
-img = FaceDetection.blurFace(img)
+img, face_detections = FaceDetection.detectFaces(img)
 
 #Instantiate our text detection object
 TextDetector = TextDetector(GPU_enabled = True)
