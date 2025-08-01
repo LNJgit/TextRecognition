@@ -1,2 +1,2 @@
 # TextRecognition
-A simple Python project that uses EasyOCR and OpenCV to detect and extract text from images. It highlights detected text with bounding boxes and displays the results using Matplotlib. Supports GPU acceleration with PyTorch for faster inference.
+A Python project that uses EasyOCR and OpenCV to detect and correct text in images, with support for face detection and blurring. Detected text is stored in a PostgreSQL database with searchable word-level indexing. The project supports GPU acceleration for faster OCR and includes tools for displaying or updating processed images from a folder.
